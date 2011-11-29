@@ -1,0 +1,22 @@
+# HG changeset patch
+# Date 1322565837 -3600
+# Parent 40bff70c312f8638c8f7b07792234a310cffe8d8
+
+diff -r 40bff70c312f config.mk
+--- a/config.mk	Tue Nov 15 20:16:58 2011 +0100
++++ b/config.mk	Tue Nov 29 12:23:57 2011 +0100
+@@ -4,11 +4,11 @@
+ # Customize below to fit your system
+ 
+ # paths
+-PREFIX = /usr/local
++PREFIX = /usr
+ MANPREFIX = ${PREFIX}/share/man
+ 
+-X11INC = /usr/X11R6/include
+-X11LIB = /usr/X11R6/lib
++X11INC = /usr/include/X11
++X11LIB = /usr/lib/X11
+ 
+ # Xinerama
+ XINERAMALIBS = -L${X11LIB} -lXinerama
