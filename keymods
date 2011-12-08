@@ -1,0 +1,26 @@
+# HG changeset patch
+# Date 1323334977 -3600
+# Parent 539b60bac15d8ee790416f51a11394bca63acdcb
+
+diff -r 539b60bac15d config.def.h
+--- a/config.def.h	Wed Nov 30 12:58:51 2011 +0100
++++ b/config.def.h	Thu Dec 08 10:02:58 2011 +0100
+@@ -54,12 +54,12 @@
+ 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
+ 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
+ 	{ MODKEY,                       XK_b,      togglebar,      {0} },
+-	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
+-	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
+-	{ MODKEY,                       XK_i,      incnmaster,     {.i = +1 } },
+-	{ MODKEY,                       XK_d,      incnmaster,     {.i = -1 } },
+-	{ MODKEY,                       XK_h,      setmfact,       {.f = -0.05} },
+-	{ MODKEY,                       XK_l,      setmfact,       {.f = +0.05} },
++	{ MODKEY,                       XK_c,      focusstack,     {.i = +1 } },
++	{ MODKEY,                       XK_g,      focusstack,     {.i = -1 } },
++	{ MODKEY,                       XK_s,      incnmaster,     {.i = +1 } },
++	{ MODKEY,                       XK_n,      incnmaster,     {.i = -1 } },
++	{ MODKEY,                       XK_d,      setmfact,       {.f = -0.05} },
++	{ MODKEY,                       XK_h,      setmfact,       {.f = +0.05} },
+ 	{ MODKEY,                       XK_Return, zoom,           {0} },
+ 	{ MODKEY,                       XK_Tab,    view,           {0} },
+ 	{ MODKEY|ShiftMask,             XK_c,      killclient,     {0} },

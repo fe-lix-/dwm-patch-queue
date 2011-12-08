@@ -1,16 +1,16 @@
 # HG changeset patch
-# Date 1322654331 -3600
-# Parent f2fe2624c35de6ee88be77bceb36dae1e46cf756
+# Date 1323337020 -3600
+# Parent 4fbbdb6eb77bd7f5fe5931bb9d228ee57ef54f28
 
-diff -r f2fe2624c35d config.def.h
+diff -r 4fbbdb6eb77b config.def.h
 --- a/config.def.h	Tue Nov 29 12:28:20 2011 +0100
-+++ b/config.def.h	Wed Nov 30 12:58:51 2011 +0100
++++ b/config.def.h	Thu Dec 08 10:37:00 2011 +0100
 @@ -47,7 +47,7 @@
  
  /* commands */
  static const char *dmenucmd[] = { "dmenu_run", "-fn", font, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbgcolor, "-sf", selfgcolor, NULL };
 -static const char *termcmd[]  = { "uxterm", NULL };
-+static const char *termcmd[]  = { "gnome-terminal", NULL };
++static const char *termcmd[]  = { "urxvt", NULL };
  
  static Key keys[] = {
  	/* modifier                     key        function        argument */
