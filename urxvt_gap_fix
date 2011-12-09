@@ -1,0 +1,16 @@
+# HG changeset patch
+# Date 1323439289 -3600
+# Parent 891589eef6da7fb4b9de232098bc30afb20201ef
+
+diff -r 891589eef6da config.def.h
+--- a/config.def.h	Thu Dec 08 10:02:57 2011 +0100
++++ b/config.def.h	Fri Dec 09 15:01:29 2011 +0100
+@@ -25,7 +25,7 @@
+ /* layout(s) */
+ static const float mfact      = 0.55; /* factor of master area size [0.05..0.95] */
+ static const int nmaster      = 1;    /* number of clients in master area */
+-static const Bool resizehints = True; /* True means respect size hints in tiled resizals */
++static const Bool resizehints = False; /* True means respect size hints in tiled resizals */
+ 
+ static const Layout layouts[] = {
+ 	/* symbol     arrange function */
